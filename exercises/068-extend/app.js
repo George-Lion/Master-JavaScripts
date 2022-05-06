@@ -20,9 +20,6 @@ function extend(obj1, obj2) {
      
 }
 
-
-
-
 extend(obj1, obj2);
 
 console.log(obj1); // --> {a: 1, b: 2, c: 3}
