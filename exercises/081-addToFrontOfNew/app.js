@@ -1,6 +1,9 @@
 
 function addToFrontOfNew(arr, element) {
     // Write your function here
+    let newArr = Object.values(arr)
+    newArr.unshift(element)
+    return newArr
 }
 
 var input = [1, 2];

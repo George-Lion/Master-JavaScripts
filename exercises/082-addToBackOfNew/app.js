@@ -1,5 +1,10 @@
 function addToBackOfNew(arr, element) {
     // Write your function here
+    let newArr = Object.values(arr)
+    newArr.push(element)
+    return newArr
+    
+       
 }
 
 var input = [1, 2];

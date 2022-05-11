@@ -5,6 +5,16 @@ var obj = {
 };
 function removeNumberValues(obj) {
     // your code here
+    for(let value in obj){
+        if(typeof obj[value] === 'number'){
+            if(obj[value]){
+                delete obj[value]
+            }
+        }else {
+            obj[value]
+        }
+         obj[value]
+    }
 }
 
 removeNumberValues(obj);
