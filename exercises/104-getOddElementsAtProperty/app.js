@@ -3,7 +3,18 @@ var obj = {
 };
 
 function getOddElementsAtProperty(obj, key) {
-    // your code here
+  // your code here
+  let newArr = [];
+  if (Array.isArray(obj[key])) {
+    for (let value of obj[key]) {
+      if (value % 2 === 1) {
+        newArr.push(value);
+      }
+    }
+  } else {
+    return newArr;
+  }
+  return newArr;
 }
 
 var output = getOddElementsAtProperty(obj, 'key');
